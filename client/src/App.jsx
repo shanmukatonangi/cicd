@@ -5,7 +5,7 @@ const App = () => {
   const [msg,setMsg]=useState("")
 
   useEffect(()=>{
-    axios.get("http://localhost:8970/api/message").then((res)=>setMsg(res.data.message)).catch((err)=>console.log(err),[])
+    axios.get("https://cicd-yli8.onrender.com/api/message").then((res)=>setMsg(res.data.message)).catch((err)=>console.log(err),[])
   })
   return (
     <div>
